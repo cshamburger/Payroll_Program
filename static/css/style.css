@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f6f9;
+}
+
+/* Layout */
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Navbar */
+.navbar {
+    background: #1f2937;
+    color: white;
+    padding: 15px 0;
+}
+
+.logo {
+    display: inline;
+    margin: 0;
+}
+
+nav {
+    float: right;
+}
+
+nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Cards */
+.card {
+    background: white;
+    padding: 30px;
+    margin-top: 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.1);
+}
+
+.card h1 {
+    text-align: center;
+}
+
+/* Form */
+.payroll-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.payroll-form label {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.payroll-form input {
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.payroll-form button {
+    margin-top: 20px;
+    padding: 12px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.payroll-form button:hover {
+    background: #1d4ed8;
+}
+
+/* Results */
+.result-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 12px 0;
+    font-size: 18px;
+}
+
+.taxes {
+    color: #dc2626;
+}
+
+.net {
+    font-weight: bold;
+    font-size: 22px;
+    color: #16a34a;
+}
+
+/* Button */
+.btn {
+    display: block;
+    margin-top: 25px;
+    text-align: center;
+    background: #16a34a;
+    color: white;
+    padding: 12px;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.btn:hover {
+    background: #15803d;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    color: #666;
+}

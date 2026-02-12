@@ -1,19 +1,36 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Paycheck Result</title>
-</head>
-<body>
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="card result-card">
     <h1>Payroll Results</h1>
 
-    <p><strong>Hours Worked:</strong> {{ hours }}</p>
-    <p><strong>Pay Rate:</strong> ${{ rate }}</p>
-    <p><strong>Gross Pay:</strong> ${{ "%.2f"|format(gross) }}</p>
-    <p><strong>Taxes:</strong> ${{ "%.2f"|format(taxes) }}</p>
-    <p><strong>Net Pay:</strong> ${{ "%.2f"|format(net) }}</p>
+    <div class="result-row">
+        <span>Hours Worked:</span>
+        <span>{{ hours }}</span>
+    </div>
 
-    <br>
-    <a href="/">Calculate Another</a>
-    
-</body>
-</html>
+    <div class="result-row">
+        <span>Pay Rate:</span>
+        <span>${{ "%.2f"|format(rate) }}</span>
+    </div>
+
+    <div class="result-row">
+        <span>Gross Pay:</span>
+        <span>${{ "%.2f"|format(gross) }}</span>
+    </div>
+
+    <div class="result-row taxes">
+        <span>Taxes:</span>
+        <span>${{ "%.2f"|format(taxes) }}</span>
+    </div>
+
+    <div class="result-row net">
+        <span>Net Pay:</span>
+        <span>${{ "%.2f"|format(net) }}</span>
+    </div>
+
+    <a href="/" class="btn">Calculate Another Employee</a>
+</div>
+
+{% endblock %}

@@ -1,21 +1,21 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Payroll Calculate</title>
-</head>
-<body>
+{% extends "base.html" %}
 
-    <h1> Employee Payroll Calculate</h1>
+{% block content %}
 
-    <form action="/calculate" method="POST">
-        <label>Hours Worked:</label>
-        <input type="number" step="0.1" name="hours" required><br><br>
+<div class="card">
+    <h1>Employee Payroll Calculator</h1>
 
-        <label>Hourly Pay Rate:</label><br>
-        <input type="number" step="0.1" name="rate" required><br><br>
+    <form action="/calculate" method="POST" class="payroll-form">
+
+        <label>Hours Worked</label>
+        <input type="number" step="0.1" name="hours" required>
+
+        <label>Hourly Pay Rate ($)</label>
+        <input type="number" step="0.01" name="rate" required>
 
         <button type="submit">Calculate Paycheck</button>
-    </form>
 
-</body>
-</html>
+    </form>
+</div>
+
+{% endblock %}
