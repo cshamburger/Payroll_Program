@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Paycheck Result</title>
+</head>
+<body>
+    <h1>Payroll Results</h1>
+
+    <p><strong>Hours Worked:</strong> {{ hours }}</p>
+    <p><strong>Pay Rate:</strong> ${{ rate }}</p>
+    <p><strong>Gross Pay:</strong> ${{ "%.2f"|format(gross) }}</p>
+    <p><strong>Taxes:</strong> ${{ "%.2f"|format(taxes) }}</p>
+    <p><strong>Net Pay:</strong> ${{ "%.2f"|format(net) }}</p>
+
+    <br>
+    <a href="/">Calculate Another</a>
+    
+</body>
+</html>
